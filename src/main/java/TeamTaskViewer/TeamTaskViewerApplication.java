@@ -17,6 +17,8 @@ public class TeamTaskViewerApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(TeamTaskViewerApplication.class, args);
 	}
+	@Autowired
+	private UserService userService;
 	@Override
 	public void run(String... args) throws Exception {
 		if(true){
@@ -30,8 +32,7 @@ public class TeamTaskViewerApplication implements CommandLineRunner {
 		}
 
 	}
-	@Autowired
-	private UserService userService;
+
 
 
 
