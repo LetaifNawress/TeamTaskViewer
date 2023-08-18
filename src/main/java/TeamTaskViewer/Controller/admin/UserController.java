@@ -21,8 +21,8 @@ public class UserController {
     }
 
     @PostMapping("/sign-in/")
-    public String signIn(@RequestBody User user) {
-        return userService.signIn(user);
+    public String signIn(@RequestBody String requestJson) {
+        return userService.signIn(requestJson);
     }
 
 

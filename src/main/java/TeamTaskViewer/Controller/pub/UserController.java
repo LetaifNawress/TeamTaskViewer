@@ -27,8 +27,8 @@ public class UserController {
     @Autowired
     private UserDao userDao;
     @PostMapping("/sign-in/")
-    public String signIn(@RequestBody User user) {
-        return userService.signIn(user);
+    public String signIn(@RequestBody String requestJson) {
+        return userService.signIn(requestJson);
     }
 
     @PostMapping(path = "/register/")

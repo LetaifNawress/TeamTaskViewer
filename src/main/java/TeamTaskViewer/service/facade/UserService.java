@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.List;
 
 public interface UserService extends UserDetailsService {
-    String signIn(User user);
+    String signIn(String requestJson );
     User save(User user);
    List<User> findAll();
 
